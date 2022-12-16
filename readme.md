@@ -1,5 +1,4 @@
 <h1>Simple web chat ui Template</h1>
-<h3 style="text-decoration:underline;">PROCEDURE</h3>
 
 </div>
 
