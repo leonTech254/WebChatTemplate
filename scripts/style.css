@@ -1,0 +1,99 @@
+ * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-wrapper {
+        background-color: grey;
+        width: 20rem;
+        height: 30rem;
+        position: relative;
+        margin: auto;
+        margin-top: .5rem;
+
+
+    }
+
+    .screen-wrapper {
+        width: 20rem;
+        height: 100%;
+        overflow-x: hidden;
+
+    }
+
+    .screen-container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        transition: 200ms;
+
+
+    }
+
+    .screen {
+        height: width;
+        width: 20rem;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 200ms;
+    }
+
+    .screen.main {
+        background-color: red;
+
+    }
+
+    .screen.register {
+        background-color: green;
+
+    }
+
+    .screen.chat {
+        background-color: magenta;
+
+
+    }
+
+    .control-screens {
+        position: absolute;
+        bottom: 0;
+
+
+    }
+
+    .control-screens ul {
+        display: flex;
+        font-size: small;
+        justify-content: space-around;
+        width: 20rem;
+        background-color: aqua;
+    }
+
+    .control-screens ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        font-weight: bold;
+
+
+    }
+
+    .screen-container {
+
+        transform: translate(-0rem);
+    }
+
+    .active-tab {
+        background-color: orangered;
+    }
